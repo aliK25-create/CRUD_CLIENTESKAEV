@@ -1,0 +1,246 @@
+/* static/clientes/style.css */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/static/fonts/montserrat_regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/static/fonts/montserrat_medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/static/fonts/montserrat_bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+:root {
+    --text-color: #000000;
+    --bg-color: #000;
+    --main-color: #805d39;
+    --title-color: #805d39; /* Color del título */
+    --subtitle-color: #a06e4d; /* Color del subtítulo */
+    --p-font: 1rem;
+    --h2-font: 2rem; /* Tamaño de h2 ajustado */
+    --h1-font: 4rem; /* Tamaño de h1 ajustado */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Regular */
+    color: var(--text-color);
+    background: var(--bg-color);
+    background: linear-gradient(to left, 
+                                rgba(211, 103, 103, 0.6), 
+                                rgba(149, 19, 82, 0.6), 
+                                rgba(190, 190, 48, 0.3));
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Bold */
+    color: var(--title-color); /* Color del título */
+    text-transform: uppercase;
+    text-align: center;
+    font-size: var(--h1-font); /* Tamaño de h1 ajustado */
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; /* Medium */
+    color: var(--subtitle-color); /* Color del subtítulo */
+    text-transform: uppercase;
+    font-size: var(--h2-font); /* Tamaño de h2 ajustado */
+    margin: 20px 0;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Regular */
+    color: var(--main-color);
+    font-size: 1.5rem; /* Tamaño de h3 ajustado */
+    margin: 15px 0;
+}
+
+p, label, input, button, .clientes-table {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Regular */
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 40px;
+    background: var(--main-color);
+    color: #e4dcdc;
+    font-size: 15px;
+    font-weight: 600; /* Medium */
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.container {
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.clientes-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: var(--p-font);
+}
+
+.clientes-table thead {
+    background-color: var(--main-color);
+    color: white;
+    letter-spacing: 5px;
+}
+
+.clientes-table th, .clientes-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.clientes-table th {
+    font-weight: 700; /* Bold */
+    text-transform: uppercase;
+}
+
+.clientes-table td {
+    font-weight: 400; /* Regular */
+    color: #333;
+}
+
+.clientes-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.clientes-table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.clientes-table td a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.clientes-table td a:hover {
+    text-decoration: underline;
+}
+
+form.search{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: 700; /* Bold */
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Regular */
+}
+
+input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; /* Medium */
+}
+
+button:hover {
+    background-color: #704a29;
+}
+
+button:active {
+    background-color: #603d24;
+}
+/* Estilo para el formulario de inicio de sesión y el fromulario de registro de usuarios */
+.form-login-register {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    text-align: center;
+    font-family: OutfitBold;
+    color: #333;
+    margin: 20px;
+}
+
+.form-login input, 
+.form-login select, 
+.form-login textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+.form-login .btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-login .btn-submit:hover {
+    background-color: #0056b3;
+}

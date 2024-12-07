@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Libros Web </title>
+    {% load static %}
+    <!--Enlace de archivo css-->
+    <link rel="stylesheet" type="text/CSS" href="{% static 'clientes/CSS/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'clientes/CSS/boxicons.min.css' %}">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <header >
+        <a class="logo" href="#">AdminPlus<span>Hospital</span></a>
+        <ul class="navbar">
+            <li><a href=#>Pacientes</a></li>
+            <li><a href=#>Diagnostico</a></li>
+            <li><a href=#>Dependecias</a></li>
+            <li><a href=#>Altas</a></li>
+            
+        </ul>
+        <div class="h-derecha">
+            <a href="#">Siguenos</a>
+            <a href="https://x.com/KevinAlEsp42316?t=2onXdNdCRxwZ6BbDt_zdxA&s=09" target="_blank">
+                <i class='bx bxl-twitter'></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100006136096075&mibextid=ZbWKwL" target="_blank">
+                <i class='bx bxl-facebook-square'></i>
+            </a>
+            <div class='bx bx-menu' id="menu-icon"></div>
+        </div>
+        
+    </header>
+
+    <section class="home">
+
+        <div class="home-text">
+            <h5 id="typed">Ingresa</h5>
+            <h1 > En la mejor aplicación</h1>
+            <p>De registro de Pacientes
+                en el area de urgencias
+                del hospital general.
+            </p>
+            <a href="{% url 'login' %}" class="btn btn-primary">Ingresar</a>
+        </div>
+    </section>
+
+
+    <!--Seccion con columnas -->
+    <section class="columnas">
+        <div data-aos="zoom-in" class="contenido-col">
+            <div class="row">
+                <div class="row-img">
+                    <img src="{% static 'clientes/img/estudio.jpg' %}" alt="Imagen de Libros">
+
+                </div>
+                <h4>Noticias</h4>
+
+            </div>
+            <div class="row">
+                <div class="row-img">
+                    <img src="{% static 'clientes/img/tutoriales.jpg' %}" alt="Imagen de tutoriales">
+
+                </div>
+                <h4>Actualizaciones</h4>
+
+            </div>
+            <div class="row">
+                <div class="row-img">
+                    <img src="{% static 'clientes/img/materias.jpg' %}" alt="Imagen de materias">
+
+                </div>
+                <h4>Sugerencias</h4>
+
+            </div>
+            <div class="row">
+                <div class="row-img">
+                    <img src="{% static 'clientes/img/juegos.jpg' %}" alt="Imagen de juegos">
+
+                </div>
+                <h4>Ayuda</h4>
+
+            </div>
+            <div class="row">
+                <div class="row-img">
+                    <img src="{% static 'clientes/img/noticias.jpg' %}" alt="Imagen de noticias">
+
+                </div>
+                <h4>Buscar</h4>
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+    <section class="Promocion">
+        <div class="contenido2-coll">
+            <div data-aos="flip-right" class="promocion-img">
+                <img src="{% static 'clientes/img/hospital.jpg' %}" alt="Imagen de Promocion">
+            </div>
+            <div class="promocion-texto">
+                <h5>"Agilizando tu acceso</h5>
+                <h1>cuidando tu salud"</h1>
+                <p>¡Regisrate ya! en AdminPlusaHospital.</p>
+                <a href="{% url 'register' %}" class="btn btn-secondary">Registrarse</a>
+            </div>
+        </div>
+    </section>
+   <!--Seccion de footer -->
+    <!-- Footer -->
+<footer>
+    <div  data-aos="fade-up"
+    data-aos-duration="3000" class="footer-container">
+    <div class="footer-col">
+        <h4>Sobre nosotros</h4>
+        <p>Somos un equipo comprometido con brindar soluciones innovadoras y accesibles para optimizar procesos en el área de admisión de urgencias.</p>
+    </div>
+    
+    <div data-aos="fade-up" data-aos-duration="3000" class="footer-col">
+        <h4>Nuestros objetivos</h4>
+        <ul>
+            <li>Ofrecer servicios confiables y eficientes.</li>
+            <li>Facilitar la gestión de información en admisión de urgencias.</li>
+            <li>Promover la innovación tecnológica en el sector salud.</li>
+            <li>Garantizar una experiencia satisfactoria a los usuarios.</li>
+        </ul>
+    </div>
+    
+
+        <div data-aos="fade-up" data-aos-duration="3000" class="footer-col">
+            <h4>Redes sociales</h4>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/profile.php?id=100006136096075&mibextid=ZbWKwL" target="_blank">
+                    <i class='bx bxl-facebook-square'></i> Facebook</a>
+                </li>
+                <li><a href="https://www.tiktok.com/@kevin.al.espinosa?_t=ZM-8rjBnw1ZoSl&_r=1" target="_blank">
+                    <i class='bx bxl-tiktok'></i> TikTok</a>
+                </li>
+                <li><a href="https://x.com/KevinAlEsp42316?t=2onXdNdCRxwZ6BbDt_zdxA&s=09" target="_blank">
+                    <i class='bx bxl-twitter'></i> Twitter</a>
+                </li>
+            </ul>
+        </div>
+        
+        
+
+        <div class="footer-col">
+            <h4>Contacto</h4>
+            <ul>
+                <!-- Enlace a WhatsApp -->
+                <li>
+                    <a href="https://wa.me/529241794907" target="_blank">
+                        <i class='bx bxl-whatsapp'></i> +52 924 179 4907
+                    </a>
+                </li>
+                <!-- Enlace al correo -->
+                <li>
+                    <a href="mailto:kevinespinosavelazquez@gmail.com">
+                        <i class='bx bxl-gmail'></i> info@kaevbok.com
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 AdminPlusaHospital.</p>
+    </div>
+</footer>
+
+
+</body>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="{% static 'clienteskaev/js/script.js' %}"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>    
+</html>
